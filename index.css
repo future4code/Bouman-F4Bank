@@ -10,6 +10,17 @@ font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
 }
 
+h1 {
+    font-size: 2em;
+    padding: 10px;   
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+
 /* Início da formatação do HEADER */
 header {
     padding: 20px;
@@ -62,7 +73,6 @@ footer {
 
 footer > p {
     font-family: 'Amatic SC', cursive;
-    /* font-size: 22px; */
     color: #BA6A39;
     font-weight: 900;
     margin-left: 10px;
@@ -75,7 +85,7 @@ footer > p {
 /* Fim da formatação do FOOTER */
 
 /* Início da formação do INDEX */
-.quem-somos {
+.quem-somos-index {
     background-color: #FFD89E;
     display: flex;
     justify-content: space-around;
@@ -88,14 +98,14 @@ footer > p {
     text-align: center;
 }
 
-.quem-somos > img {
+.quem-somos-index > img {
     height: 240px;
     opacity: 70%;
     border-radius: 30px;
     max-width: 50%;
 }
 
-.produtos {
+.produtos-index {
     background-color: #FFE7D9;
     display: flex;
     flex-direction: row-reverse;
@@ -104,7 +114,7 @@ footer > p {
     padding: 30px;
 }
 
-.produtos > img {
+.produtos-index > img {
     height: 240px;
     opacity: 90%;
     border-radius: 10px;
@@ -115,7 +125,7 @@ footer > p {
     padding: 8px;
 }
 
-.nosso-time {
+.nosso-time-index {
     background-color: #F4F4F4;
     display: flex;
     justify-content: space-around;
@@ -127,13 +137,45 @@ footer > p {
     padding: 20px 0;
 }
 
-.nosso-time > img {
+.nosso-time-index > img {
     height: 240px;
     opacity: 70%;
     border-radius: 50%;
     max-width: 50%;
 }
 /* Fim da formação do INDEX */
+
+/* Pagina Quem Somos */
+.quem-somos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #BA6A39;
+    padding: 30px;
+}
+#imgQuemSomos{
+    height: 300px;
+}
+/* Pagina Quem Somos */
+
+/* Pagina Nosso time */
+
+.nosso-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #BA6A39;
+    padding: 30px;
+}
+#imgnossotime{
+    height: 300px;
+}
+
+/* Pagina Nosso Time */
+
+
 
 /* Responsividade */
 @media screen and (max-device-width : 480px) {
@@ -180,22 +222,48 @@ footer > p {
     /* Fim FOOTER */
 
     /* Início INDEX */
-    .quem-somos, .produtos, .nosso-time {
+    .quem-somos-index, .produtos-index, .nosso-time-index {
         flex-direction: column;
 
     }
 
-    .quem-somos > div, 
-    .produtos > div, .nosso-time > div {
+    .quem-somos-index > div, 
+    .produtos-index > div, .nosso-time-index > div {
         width: 100%;
     }
 
-    .quem-somos > img, 
-    .produtos > img, .nosso-time > img {
+    .quem-somos-index > img, 
+    .produtos-index > img, .nosso-time-index > img {
         width: 100%;
         height: 120px;
     }
     /* Fim INDEX */
 
+    .quem-somos{
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .quem-somos div {
+        width: 100%;
+    }
+
+    #imgQuemSomos {
+        height: 200px;
+        margin: 10px;
+    }
+    
+    .nosso-time{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;   
+    }
+    
+    #imgnossotime {
+        height: 200px;
+        margin: 10px;
+    }
 
 }
