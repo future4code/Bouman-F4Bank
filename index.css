@@ -1,20 +1,26 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Source Sans Pro', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: 600;
 }
 
+/* Início da formatação do HEADER */
 header {
     padding: 20px;
     background: #FFC583;
-    color: #BA6A39;
-    font-weight: bold;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #logo-bank {
@@ -28,18 +34,168 @@ nav {
     width: 50%;
 }
 
-section {
-    height: 200px;
+nav > a {
+    font-size: 35px;
+    color: #BA6A39;
+    font-weight: 900;
 }
 
+nav > a:visited {
+    color: #744223;
+}
+
+nav > a:link, nav > a:hover, 
+nav > a:active {
+    text-decoration: none;
+}
+/* Fim da formatação do HEADER */
+
+/* Início da formatação do FOOTER */
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: #FFC583;
-    color: #BA6A39;
-    font-weight: bold;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+footer > p {
+    font-family: 'Amatic SC', cursive;
+    /* font-size: 22px; */
+    color: #BA6A39;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    margin: 0 10px;
+}
+/* Fim da formatação do FOOTER */
+
+/* Início da formação do INDEX */
+.quem-somos {
+    background-color: #FFD89E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.texto-quem-somos > p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.quem-somos > img {
+    height: 240px;
+    opacity: 70%;
+    border-radius: 30px;
+    max-width: 50%;
+}
+
+.produtos {
+    background-color: #FFE7D9;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.produtos > img {
+    height: 240px;
+    opacity: 90%;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.texto-produtos > p {
+    padding: 8px;
+}
+
+.nosso-time {
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.texto-nosso-time > p {
+    padding: 20px 0;
+}
+
+.nosso-time > img {
+    height: 240px;
+    opacity: 70%;
+    border-radius: 50%;
+    max-width: 50%;
+}
+/* Fim da formação do INDEX */
+
+/* Responsividade */
+@media screen and (max-device-width : 480px) {
+    /* Início HEADER */
+    * {
+        font-size: 25px;
+    }
+
+    header {
+        flex-direction: column;
+        position: static;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav > a {
+        font-size: 30px;
+    }
+
+    #logo-bank {
+        margin-left: 0;
+    }
+    /* Fim HEADER */
+    
+    /*Início FOOTER */
+        footer {
+            flex-wrap: wrap;
+            justify-content: center;
+        }    
+
+        footer > p {
+            width: 40%;
+            text-align: center;
+        }
+
+        .redes-sociais {
+            margin-top: 20px;
+        }
+    /* Fim FOOTER */
+
+    /* Início INDEX */
+    .quem-somos, .produtos, .nosso-time {
+        flex-direction: column;
+
+    }
+
+    .quem-somos > div, 
+    .produtos > div, .nosso-time > div {
+        width: 100%;
+    }
+
+    .quem-somos > img, 
+    .produtos > img, .nosso-time > img {
+        width: 100%;
+        height: 120px;
+    }
+    /* Fim INDEX */
+
+
 }
