@@ -176,6 +176,23 @@ footer > p {
 /* Pagina Nosso Time */
 
 
+/* Pagina Nossos Produtos */
+.flex-container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container > article {
+    padding: 10px;
+}
+
+.box > img {
+    height: 300px;
+}
+
+/* Pagina Nossos Produtos */
+
 
 /* Responsividade */
 @media screen and (max-device-width : 480px) {
@@ -264,6 +281,23 @@ footer > p {
     #imgnossotime {
         height: 200px;
         margin: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .flex-container:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box > img {
+        height: 150px;
     }
 
 }
