@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    background: #FFC583;
+    color: #BA6A39;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#logo-bank {
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+section {
+    height: 200px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFC583;
+    color: #BA6A39;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
